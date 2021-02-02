@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html with javascript</title>
+</head>
+<body>
+    <!-- javascipt co the thay doi noi dung cua the html -->
+    <h2 id = "demo"> hello world!</h2>
+    <button type ="button" onclick='document.getElementById("demo").innerHTML = "hello javascript"'> click here</button>
+
+    <!-- javascript co the thay doi attriubute cua the html-->
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='./assets/circleLight.jpg'"> Turn on the light</button>
+
+    <img id="myImage" src ="./assets/light.jpg" style="width: 100px; height: 100px">
+
+    <!-- javascript co the thay doi css-->
+    <h2 id="text" style = "color: red;">chung ta cua hien tai co the lam duoc nhieu dieu that la thu vi cho cuoc song nay</h2>
+    <button tyle = "button" onclick= "document.getElementById('text').style.color= 'blue'"> click here to change the color</button>
+
+    <!-- hide and show element in html-->
+    <h2 id = "hide">hide elements tags in html</h2>
+    <h2 id = "show" style="display: none;">show elements tags in html</h2>
+    <button onclick="document.getElementById('hide').style.display='none'">click here to hide the element tags</button>
+    <button onclick="document.getElementById('show').style.display='block'">click here to show the element tags</button>
+</body>
+</html>
