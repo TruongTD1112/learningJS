@@ -1,26 +1,22 @@
-const prompt = require('prompt-sync')();
 const fs = require('fs');
+const prompt = require('prompt-sync');
 const readline = require('readline');
-// const V = prompt();
-// var fs = require('fs');
-// var a = new Array(V);
-// for(let i=0; i< V; i++){
-//     a[i] = new Array(V);
-// }
-// a[0][0] = 1;
+var path = require('path');
+const { fileURLToPath } = require('url');
+var fileName = path.join(__dirname, 'data.txt');
+
 const file = readline.createInterface({
-    input: fs.createReadStream('data.txt'),
-    output: process.stdout,
-    terminal: false
+    input: fs.createReadStream(fileName)
 });
-// try{
-//     var data = fs.readFileSync('./data.txt');
-//     console.log(data);
-// }
-// catch(e){
-//     console.log(e);
-// }
-file.on('line',(line) => {
-    console.log(line);
-});
+var n = readline();
+console.log(n);
+var a = new Array(3);
+for(let i= 0; i<3; i++){
+    a[i] = [];
+}
+var index = 0;
+file.on('line', (line) => {
+    a[index++] = line.split(' ').map(x => parseInt(x));
+})
+setTimeout(()=> console.log(a), 1000);
 
