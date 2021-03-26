@@ -1,8 +1,6 @@
-function a(x) {
-    x++;
-    return function(y){
-        console.log(y);
-    }
+var dogs = {
+    dogs : ["truong", "duy anh"]
 }
-
-a(1)(2);
+console.log(dogs.dogs[0]);
+var name = "tran dinh truong";
+console.log(test);

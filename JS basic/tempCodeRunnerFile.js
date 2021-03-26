@@ -1,4 +1,7 @@
-let x = a(1);
-// x();
-// x();
-// x();
+
+// rl.question('Input an integer: ', response => {
+//   let n = parseInt (response)
+//   // stuff to be done with n goes here
+
+//   rl.close()
+// })
